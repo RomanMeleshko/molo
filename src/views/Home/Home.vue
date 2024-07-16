@@ -4,173 +4,177 @@
 
       <div v-if="show" class="home_wrapper">
 
+
+        <SwiperBlock></SwiperBlock>
+
+
 <!--        <Animation>-->
 <!--          <img class="animation_view" src="/src/assets/rocket.gif" />-->
 <!--        </Animation>-->
 
-        <div class="row p-4 mood">
-          <div class="col col-md-6 col-lg-6 d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+<!--        <div class="row p-4 mood">-->
+<!--          <div class="col col-md-6 col-lg-6 d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">-->
 
-            <TitleInfo ref="info">
-              <template v-slot:title>
+<!--            <TitleInfo ref="info">-->
+<!--              <template v-slot:title>-->
 
-                <div class="title_block text-center text-sm-start text-md-start text-lg-start text-xl-start">
-                  <p class="title p-2"><span class="r-light-blue">Front end</span> Developer</p>
-                  <p class="sub_title">Creating Frontend it is art of the numbers on the clean canvas of the browser</p>
-                  <span>
-                    <button v-tooltip="textTooltip" class="get_start">Get start</button>
-                  </span>
-                </div>
+<!--                <div class="title_block text-center text-sm-start text-md-start text-lg-start text-xl-start">-->
+<!--                  <p class="title p-2"><span class="r-light-blue">Front end</span> Developer</p>-->
+<!--                  <p class="sub_title">Creating Frontend it is art of the numbers on the clean canvas of the browser</p>-->
+<!--                  <span>-->
+<!--                    <button v-tooltip="textTooltip" class="get_start">Get start</button>-->
+<!--                  </span>-->
+<!--                </div>-->
 
-              </template>
-            </TitleInfo>
+<!--              </template>-->
+<!--            </TitleInfo>-->
 
-          </div>
-          <div class="col col-md-6 col-lg-6 pt-2 d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+<!--          </div>-->
+<!--          <div class="col col-md-6 col-lg-6 pt-2 d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">-->
 
-            <Foto>
-              <template v-slot:foto>
+<!--            <Foto>-->
+<!--              <template v-slot:foto>-->
 
-                <div class="wrapper_foto">
-                  <img class="foto" src="assets/Meleshko.png" alt="foto"/>
-                  <div class="shadow-foto"></div>
-                </div>
+<!--                <div class="wrapper_foto">-->
+<!--                  <img class="foto" src="assets/Meleshko.png" alt="foto"/>-->
+<!--                  <div class="shadow-foto"></div>-->
+<!--                </div>-->
 
-              </template>
+<!--              </template>-->
 
-            </Foto>
+<!--            </Foto>-->
 
-          </div>
-        </div>
+<!--          </div>-->
+<!--        </div>-->
 
-        <div class="row py-4 justify-content-center" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
-          <div class="col-md-10 col-sm-10 px-4 d-flex justify-content-center">
+<!--        <div class="row py-4 justify-content-center" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">-->
+<!--          <div class="col-md-10 col-sm-10 px-4 d-flex justify-content-center">-->
 
-            <TitleInfo>
-              <template v-slot:title>
+<!--            <TitleInfo>-->
+<!--              <template v-slot:title>-->
 
-                <div class="title_block text-center text-sm-start text-md-start text-lg-start text-xl-start">
-                  <p class="title_info">The some a little <span class="r-apple-green">info</span> about me</p>
-                </div>
+<!--                <div class="title_block text-center text-sm-start text-md-start text-lg-start text-xl-start">-->
+<!--                  <p class="title_info">The some a little <span class="r-apple-green">info</span> about me</p>-->
+<!--                </div>-->
 
-              </template>
-            </TitleInfo>
+<!--              </template>-->
+<!--            </TitleInfo>-->
 
-          </div>
-        </div>
+<!--          </div>-->
+<!--        </div>-->
 
-        <div class="row" id="about">
+<!--        <div class="row" id="about">-->
 
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-5 py-3 px-5 d-flex justify-content-center align-items-center title-block" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+<!--          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-5 py-3 px-5 d-flex justify-content-center align-items-center title-block" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">-->
 
-            <TitleInfo>
+<!--            <TitleInfo>-->
 
-              <template v-slot:title>
+<!--              <template v-slot:title>-->
 
-              <div>
-                <h1 class="header-title">About me</h1>
-                <p class="text-block">
-                   {{ textMe }}
-                </p>
-              </div>
+<!--              <div>-->
+<!--                <h1 class="header-title">About me</h1>-->
+<!--                <p class="text-block">-->
+<!--                   {{ textMe }}-->
+<!--                </p>-->
+<!--              </div>-->
 
-              </template>
-            </TitleInfo>
+<!--              </template>-->
+<!--            </TitleInfo>-->
 
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-4 py-3 d-flex justify-content-center" data-aos="fade-up-left" data-aos-delay="50" data-aos-duration="1000">
+<!--          </div>-->
+<!--          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-4 py-3 d-flex justify-content-center" data-aos="fade-up-left" data-aos-delay="50" data-aos-duration="1000">-->
 
-            <Foto>
-              <template v-slot:foto>
+<!--            <Foto>-->
+<!--              <template v-slot:foto>-->
 
-                <div>
-                  <img class="foto" src="assets/work.png" alt="man">
-                  <div class="shadow-foto"></div>
-                </div>
+<!--                <div>-->
+<!--                  <img class="foto" src="assets/work.png" alt="man">-->
+<!--                  <div class="shadow-foto"></div>-->
+<!--                </div>-->
 
-              </template>
-            </Foto>
+<!--              </template>-->
+<!--            </Foto>-->
 
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 order-md-first order-sm-first order-last col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-4 py-3 d-flex justify-content-center" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
-
-            <Foto>
-              <template v-slot:foto>
-
-                <div class="">
-                  <img class="foto" src="assets/reach.png" alt="man">
-                  <div class="shadow-foto"></div>
-                </div>
-
-              </template>
-            </Foto>
-
-          </div>
-          <div class="col-xl-6 col-lg-6 order-md-last order-first order-sm-last col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-5 py-3 px-5 d-flex justify-content-center align-items-center title-block" data-aos="zoom-in-left" data-aos-delay="50" data-aos-duration="1000">
-
-            <TitleInfo ref="info">
-              <template v-slot:title>
-
-              <div>
-                <h1 class="header-title"><span class="r-hard-gray foo">About </span> education</h1>
-                <p class="text-block r-light-gray">
-                  {{ textEducation }}
-                </p>
-              </div>
-
-              </template>
-            </TitleInfo>
-
-          </div>
-        </div>
+<!--          </div>-->
+<!--        </div>-->
 
 
-        <div class="row">
+<!--        <div class="row">-->
+<!--          <div class="col-xl-6 col-lg-6 order-md-first order-sm-first order-last col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-4 py-3 d-flex justify-content-center" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">-->
 
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-5 py-3 px-5 d-flex justify-content-center align-items-center title-block" data-aos="flip-left" data-aos-delay="50" data-aos-duration="1000">
+<!--            <Foto>-->
+<!--              <template v-slot:foto>-->
 
-            <TitleInfo>
+<!--                <div class="">-->
+<!--                  <img class="foto" src="assets/reach.png" alt="man">-->
+<!--                  <div class="shadow-foto"></div>-->
+<!--                </div>-->
 
-              <template v-slot:title>
+<!--              </template>-->
+<!--            </Foto>-->
 
-              <div>
-                <h1 class="header-title">About hobby</h1>
-                <p class="text-block">
-                  {{ textHobby }}
-                </p>
-              </div>
+<!--          </div>-->
+<!--          <div class="col-xl-6 col-lg-6 order-md-last order-first order-sm-last col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-5 py-3 px-5 d-flex justify-content-center align-items-center title-block" data-aos="zoom-in-left" data-aos-delay="50" data-aos-duration="1000">-->
 
-              </template>
-            </TitleInfo>
+<!--            <TitleInfo ref="info">-->
+<!--              <template v-slot:title>-->
 
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-4 py-3 d-flex justify-content-center" data-aos="flip-right" data-aos-delay="50" data-aos-duration="1000">
+<!--              <div>-->
+<!--                <h1 class="header-title"><span class="r-hard-gray foo">About </span> education</h1>-->
+<!--                <p class="text-block r-light-gray">-->
+<!--                  {{ textEducation }}-->
+<!--                </p>-->
+<!--              </div>-->
 
-            <Foto>
-              <template v-slot:foto>
+<!--              </template>-->
+<!--            </TitleInfo>-->
 
-                <div>
-                  <img class="foto" src="assets/just.png" alt="man">
-                  <div class="shadow-foto"></div>
-                </div>
+<!--          </div>-->
+<!--        </div>-->
 
-              </template>
-            </Foto>
 
-          </div>
-        </div>
+<!--        <div class="row">-->
 
-        <ButtonTop>
-          <template v-slot:buttonTop>
+<!--          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-5 py-3 px-5 d-flex justify-content-center align-items-center title-block" data-aos="flip-left" data-aos-delay="50" data-aos-duration="1000">-->
 
-            <img class="buttonTop" src="/src/assets/polar-rocket.gif" />
+<!--            <TitleInfo>-->
 
-          </template>
-        </ButtonTop>
+<!--              <template v-slot:title>-->
+
+<!--              <div>-->
+<!--                <h1 class="header-title">About hobby</h1>-->
+<!--                <p class="text-block">-->
+<!--                  {{ textHobby }}-->
+<!--                </p>-->
+<!--              </div>-->
+
+<!--              </template>-->
+<!--            </TitleInfo>-->
+
+<!--          </div>-->
+<!--          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 py-xl-5 py-lg-5 py-md-4 py-3 d-flex justify-content-center" data-aos="flip-right" data-aos-delay="50" data-aos-duration="1000">-->
+
+<!--            <Foto>-->
+<!--              <template v-slot:foto>-->
+
+<!--                <div>-->
+<!--                  <img class="foto" src="assets/just.png" alt="man">-->
+<!--                  <div class="shadow-foto"></div>-->
+<!--                </div>-->
+
+<!--              </template>-->
+<!--            </Foto>-->
+
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <ButtonTop>-->
+<!--          <template v-slot:buttonTop>-->
+
+<!--            <img class="buttonTop" src="/src/assets/polar-rocket.gif" />-->
+
+<!--          </template>-->
+<!--        </ButtonTop>-->
 
       </div>
 
@@ -185,6 +189,7 @@ import Foto from "components/Home/Foto.vue";
 import TitleInfo from "components/Home/TitleInfo.vue";
 import Animation from "components/Animation/Animation.vue";
 import ButtonTop from "components/Buttons/ButtonTop.vue";
+import SwiperBlock from "components/SwiperBlock/SwiperBlock.vue";
 
 import AOS from 'aos';
 
@@ -214,7 +219,7 @@ export default defineComponent({
                   "At the question what do you feel while to ride?\n" +
                   "You know....it is absolute unbelievable feeling))\n" +
                   "The sound of the wheels under the motorbike and smell of the road give me absolutely\n" +
-                  "and i am glad that can to share it with you)"
+                  "and i am glad that can to share it with you)",
     }
   },
 
@@ -231,13 +236,20 @@ export default defineComponent({
     Foto,
     TitleInfo,
     Animation,
-    ButtonTop
+    ButtonTop,
+    SwiperBlock
   }
 });
 </script>
 
 <style lang="scss">
 @import "scss/variables.scss";
+
+
+  .swiper-slide {
+    width: 100%;
+    height: 500px;
+  }
 
  .foo {
    font-weight: normal;

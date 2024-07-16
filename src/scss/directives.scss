@@ -1,0 +1,27 @@
+// ========= Styles for tooltip directives =========
+.tooltip_block {
+   padding: 10px 15px;
+   position: absolute;
+   background: #009be5;
+   color: #ffffff;
+   box-sizing: border-box;
+   font-size: clamp(5px, 4.5vw, 13px);
+ }
+
+ .tooltip_block::before {
+   position: absolute;
+   content: "";
+   top: 37px;
+   width: 0;
+   height: 0;
+   border: 0 solid transparent;
+   border-left-width: 12px;
+   border-right-width: 12px;
+   border-top: 13px solid #009be5;
+ }
+
+ @media (max-width: 576px) {
+   .tooltip_block {
+     background: red;
+   }
+ }

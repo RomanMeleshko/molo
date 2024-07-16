@@ -2,12 +2,20 @@ import { createApp } from 'vue'
 import './scss/app.scss'
 import router from "../router";
 import App from './App.vue'
+
+// Connect Swiper
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+// Connect directives
 import tooltip from "directives/Tooltip/index";
 import scroll from "directives/Scroll/index";
 
+// Connect Ajax effect animation on page
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
+// Connect Icons
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUser, faClock, faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons';

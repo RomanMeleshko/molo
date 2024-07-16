@@ -1,0 +1,16 @@
+// ============ Styles for icons =============
+ .fa-github,
+ .fa-instagram,
+ .fa-telegram,
+ .fa-linkedin-in {
+   width: 20px;
+   height: 20px;
+   border-radius: 7px;
+   padding: 5px;
+   transition: all 0.1s linear 0s;
+   cursor: pointer;
+
+   &:hover {
+     transform: scale(1.2);
+   }
+ }
