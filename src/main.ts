@@ -6,6 +6,7 @@ import App from './App.vue'
 // Connect Swiper
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // Connect directives
 import tooltip from "directives/Tooltip/index";
