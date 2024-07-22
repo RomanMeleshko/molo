@@ -8,6 +8,10 @@
         <SwiperBlock></SwiperBlock>
 
 
+          <p class="r-light-blue">
+            trxt text text
+          </p>
+
 <!--        <Animation>-->
 <!--          <img class="animation_view" src="/src/assets/rocket.gif" />-->
 <!--        </Animation>-->
@@ -191,6 +195,7 @@ import Animation from "components/Animation/Animation.vue";
 import ButtonTop from "components/Buttons/ButtonTop.vue";
 import SwiperBlock from "components/SwiperBlock/SwiperBlock.vue";
 
+
 import AOS from 'aos';
 
 import { defineComponent } from 'vue';
@@ -237,7 +242,7 @@ export default defineComponent({
     TitleInfo,
     Animation,
     ButtonTop,
-    SwiperBlock
+    SwiperBlock,
   }
 });
 </script>
@@ -245,11 +250,6 @@ export default defineComponent({
 <style lang="scss">
 @import "scss/variables.scss";
 
-
-  .swiper-slide {
-    width: 100%;
-    height: 500px;
-  }
 
  .foo {
    font-weight: normal;

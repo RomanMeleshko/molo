@@ -1,3 +1,4 @@
+// Color background for elements
 $light-blue: #90e0ef;
 $apple-green: #a5be00;
 $hard-gray: #bcbd8b;
@@ -6,7 +7,7 @@ $light-gray: #d7e3fc;
 @mixin bg-color-text( $name, $radius ) {
   background: $name;
   border-radius: $radius;
-  position: relative;
+  position: absolute;
 }
 
 .r-light-blue { @include bg-color-text( $light-blue, 72% 28% 82% 18% / 23% 42% 58% 77% ); }

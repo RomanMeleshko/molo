@@ -36,7 +36,7 @@ export default {
     navbarToggle() {
 
        const elem = this.$refs["navbar-toggle"];
-       elem.classList.toggle("red");
+       elem.classList.toggle("icon-rotate");
     }
   }
 }
@@ -45,7 +45,7 @@ export default {
 <style lang="scss" scoped>
 @import "scss/variables.scss";
 
- .red {
+ .icon-rotate {
    position: relative;
    top: 1px;
    transition: all 0.3s;
