@@ -1,8 +1,9 @@
 <template>
  <div class="Title">
 
-
-
+    <div :class="componentClass">
+      <slot name="name"></slot>
+    </div>
 
  </div>
 </template>
@@ -15,13 +16,18 @@ export default {
     return {
     }
   },
+  props: {
+    componentClass: {
+      type: String,
+      default: '',
+    },
+  },
 
 }
 </script>
 
 <style lang="scss" scoped>
 @import "scss/variables.scss";
-
 
 
 </style>

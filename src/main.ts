@@ -19,14 +19,15 @@ import 'aos/dist/aos.css';
 // Connect Icons
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUser, faClock, faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faClock, faWandMagicSparkles, faHryvnia } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook,
          faGithub,
          faSquareInstagram,
          faLinkedin,
          faLinkedinIn,
          faInstagram,
-         faTelegram
+         faTelegram,
+         faH
        } from '@fortawesome/free-brands-svg-icons'
 
 library.add( faUser,
@@ -38,7 +39,8 @@ library.add( faUser,
              faLinkedin,
              faLinkedinIn,
              faInstagram,
-             faTelegram
+             faTelegram,
+             faHryvnia
             );
 
 

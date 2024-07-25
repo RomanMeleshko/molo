@@ -23,7 +23,6 @@
 </template>
 
 <script lang="ts">
-import {$ref} from "vue/macros";
 
 export default {
   el: "#NavBar",

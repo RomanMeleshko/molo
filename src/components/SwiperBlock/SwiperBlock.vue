@@ -20,19 +20,8 @@
       <div
           slot="container-start"
           class="parallax-bg"
-
           data-swiper-parallax="-23%"
-        ></div>
-
-<!--      <swiper-slide>Slide 11111</swiper-slide>-->
-<!--      <swiper-slide>Slide 2</swiper-slide>-->
-<!--      <swiper-slide>Slide 3</swiper-slide>-->
-<!--      <swiper-slide>Slide 4</swiper-slide>-->
-<!--      <swiper-slide>Slide 5</swiper-slide>-->
-<!--      <swiper-slide>Slide 6</swiper-slide>-->
-<!--      <swiper-slide>Slide 7</swiper-slide>-->
-<!--      <swiper-slide>Slide 8</swiper-slide>-->
-<!--      <swiper-slide>Slide 9</swiper-slide>-->
+      ></div>
 
       <swiper-slide>
       <div class="title" data-swiper-parallax="-300">Slide 1</div>
@@ -115,7 +104,7 @@ import { Autoplay, Parallax, Pagination, Navigation } from 'swiper/modules';
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 560px;
   animation: move_background_colors 25s linear infinite;
   background: linear-gradient(149deg, #90e0ef, #ECEDED 62%);
   //background: linear-gradient(149deg, rgba(24,187,156,0.7) 0%);
