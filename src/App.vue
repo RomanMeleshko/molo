@@ -43,57 +43,37 @@
 
         <footer>
 
-<!--          <Footer class="foo" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">-->
-<!--            <template v-slot:footer-banner>-->
+          <Footer>
+            <template v-slot:footer-banner>
 
-<!--              <label class="banner" style="position: relative">-->
-<!--                <span class="banner-text" style="position: absolute">M</span>-->
-<!--                <img src="assets/yellow.png" width="90" alt="">-->
-<!--              </label>-->
+              <label class="banner">
+                <img class="logo" src="assets/logo-molo-ua.png" width="120" height="60" alt=""/>
+              </label>
 
-<!--            </template>-->
-<!--            <template v-slot:footer-place>-->
+            </template>
+            <template v-slot:footer-place>
 
-<!--              <ul class="ps-0" v-for="item in location" :key="item.id">-->
-<!--                <li class="footer_title pb-2">{{ item.title }}</li>-->
-<!--                <li class="contacts">-->
-<!--                  <span>г. </span>-->
-<!--                  <span>{{ item.place }}</span>-->
-<!--                </li>-->
-<!--              </ul>-->
+              <ul class="ps-0">
+                <li class="footer_title" v-for="item in location" :key="item.id">{{ item.title }}</li>
+              </ul>
 
-<!--            </template>-->
-<!--            <template v-slot:footer-callback>-->
+            </template>
+            <template v-slot:footer-callback>
 
-<!--              <ul class="ps-0 my-sm-0" v-for="item in callback" :key="item.id">-->
-<!--                <li class="footer_title pb-2">{{ item.title }}</li>-->
-<!--                <li class="contacts">-->
-<!--                  <span>тел: </span>-->
-<!--                  <span>{{ item.phone }}</span>-->
-<!--                </li>-->
-<!--                <li class="contacts">-->
-<!--                  <span>email: </span>-->
-<!--                  <span>{{ item.email }}</span>-->
-<!--                </li>-->
-<!--              </ul>-->
+              <ul class="ps-0">
+                <li class="footer_title"  v-for="item in callback" :key="item.id">{{ item.title }}</li>
+              </ul>
 
-<!--            </template>-->
-<!--            <template v-slot:footer-call>-->
+            </template>
+            <template v-slot:footer-call>
 
-<!--              <ul class="ps-0 my-sm-0" v-for="item in icons" :key="item.id">-->
-<!--                <li class="footer_title pb-2">{{ item.title }}</li>-->
-<!--                <li>-->
-<!--                  <span class="icon px-1">-->
-<!--                    <a v-for="point in item.links" :href="point.link" target="_blank">-->
-<!--                      <font-awesome-icon :icon="point.icon" />-->
-<!--                    </a>-->
-<!--                  </span>-->
-<!--                </li>-->
-<!--              </ul>-->
+              <ul class="ps-0">
+                <li class="footer_title" v-for="item in aboutUs" :key="item.id">{{ item.title }}</li>
+              </ul>
 
-<!--            </template>-->
+            </template>
 
-<!--          </Footer>-->
+          </Footer>
 
         </footer>
 
@@ -156,48 +136,32 @@ export default defineComponent({
       location: [
         {
           id: 1,
-          title: "Местонахождение",
-          place: "Полтава",
+          title: "Корпоративні подарунки",
+        } as Note,
+        {
+          id: 2,
+          title: "Доставка та оплата",
         } as Note
       ],
       callback: [
         {
           id: 1,
-          title: "Обратная связь",
-          phone: "0955209822",
-          email: "roman.meleshko1@gmail.com"
-        } as Note
-      ],
-      navIcon: [
-        {
-          link: "https://www.instagram.com/roma_meleshko/",
-          icon: "fa-brands fa-instagram"
-        } as Link,
-        {
-          link: "https://www.linkedin.com/in/roman-meleshko-400036160/",
-          icon: "fa-brands fa-telegram"
-        } as Link,
-      ],
-      icons: [
+          title: "Співпраця",
+        } as Note,
         {
           id: 1,
-          title: "Связь",
-          links: [
-            {
-              link: "https://github.com/RomanMeleshko/MeleshkoCV",
-              icon: "fa-brands fa-github",
-            } as Link,
-            {
-              link: "https://www.instagram.com/roma_meleshko/",
-              icon: "fa-brands fa-instagram"
-            } as Link,
-            {
-              link: "https://www.linkedin.com/in/roman-meleshko-400036160/",
-              icon: "fa-brands fa-linkedin-in"
-            } as Link,
-          ],
+          title: "Контакти",
+        } as Note
+      ],
+      aboutUs: [
+        {
+          id: 1,
+          title: "Про нас",
         } as Note,
-
+        {
+          id: 2,
+          title: "Оферта",
+        } as Note,
       ],
     }
   },
@@ -262,15 +226,15 @@ export default defineComponent({
    min-width: 140px;
  }
 
- .banner {
-   position: relative;
- }
- .banner-text {
-   top: 50%;
-   left: 50%;
-   font-style: italic;
-   font-size: 30px;
-   transform: translate(-50%, -50%);
- }
+ //.banner {
+ //  position: relative;
+ //}
+ //.banner-text {
+ //  top: 50%;
+ //  left: 50%;
+ //  font-style: italic;
+ //  font-size: 30px;
+ //  transform: translate(-50%, -50%);
+ //}
 
 </style>
